@@ -8,6 +8,8 @@ configure_file(config.h.in config.h)
 
 add_executable(${PROJECT_NAME}  src/main.cpp)
 
+set(CMAKE_FIND_LIBRARY_SUFFIXES ".lib" ".a")
+
 target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_BINARY_DIR}/vcpkg_installed/x64-windows/include)
 target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_BINARY_DIR})
 
@@ -16,5 +18,10 @@ target_link_directories(${PROJECT_NAME} PUBLIC ${PROJECT_BINARY_DIR}/vcpkg_insta
 
 #opengl lib 
 find_package(glfw3 CONFIG REQUIRED)
-target_link_libraries(${PROJECT_NAME} PRIVATE glfw opengl32)
+target_link_libraries(${PROJECT_NAME} PRIVATE glfw opengl32 )
+
+find_package(GLEW REQUIRED)
+target_link_libraries(${PROJECT_NAME} PRIVATE GLEW::GLEW)
+
+
   
