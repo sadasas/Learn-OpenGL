@@ -1,3 +1,0 @@
-E:/C++/Learn/OpenGL/Learn-OpenGL/CMakeFiles/Learn.dir
-E:/C++/Learn/OpenGL/Learn-OpenGL/CMakeFiles/ALL_BUILD.dir
-E:/C++/Learn/OpenGL/Learn-OpenGL/CMakeFiles/ZERO_CHECK.dir
