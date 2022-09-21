@@ -1,0 +1,39 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.23/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake
+E:/C++/Learn/OpenGL/Learn-OpenGL/CMakeFiles/3.23.2/CMakeCCompiler.cmake
+E:/C++/Learn/OpenGL/Learn-OpenGL/CMakeFiles/3.23.2/CMakeCXXCompiler.cmake
+E:/C++/Learn/OpenGL/Learn-OpenGL/CMakeFiles/3.23.2/CMakeRCCompiler.cmake
+E:/C++/Learn/OpenGL/Learn-OpenGL/CMakeFiles/3.23.2/CMakeSystem.cmake
+E:/C++/Learn/OpenGL/Learn-OpenGL/CMakeLists.txt
+E:/C++/Learn/OpenGL/Learn-OpenGL/config.h.in
+E:/C++/Learn/OpenGL/Learn-OpenGL/vcpkg.json
+E:/C++/Learn/OpenGL/Learn-OpenGL/vcpkg_installed/x64-windows/share/glew/CopyImportedTargetProperties.cmake
+E:/C++/Learn/OpenGL/Learn-OpenGL/vcpkg_installed/x64-windows/share/glew/glew-config.cmake
+E:/C++/Learn/OpenGL/Learn-OpenGL/vcpkg_installed/x64-windows/share/glew/glew-targets-debug.cmake
+E:/C++/Learn/OpenGL/Learn-OpenGL/vcpkg_installed/x64-windows/share/glew/glew-targets-release.cmake
+E:/C++/Learn/OpenGL/Learn-OpenGL/vcpkg_installed/x64-windows/share/glew/glew-targets.cmake
+E:/C++/Learn/OpenGL/Learn-OpenGL/vcpkg_installed/x64-windows/share/glew/vcpkg-cmake-wrapper.cmake
+E:/C++/Learn/OpenGL/Learn-OpenGL/vcpkg_installed/x64-windows/share/glfw3/glfw3Config.cmake
+E:/C++/Learn/OpenGL/Learn-OpenGL/vcpkg_installed/x64-windows/share/glfw3/glfw3ConfigVersion.cmake
+E:/C++/Learn/OpenGL/Learn-OpenGL/vcpkg_installed/x64-windows/share/glfw3/glfw3Targets-debug.cmake
+E:/C++/Learn/OpenGL/Learn-OpenGL/vcpkg_installed/x64-windows/share/glfw3/glfw3Targets-release.cmake
+E:/C++/Learn/OpenGL/Learn-OpenGL/vcpkg_installed/x64-windows/share/glfw3/glfw3Targets.cmake
+E:/C++/vcpkg/scripts/buildsystems/vcpkg.cmake
