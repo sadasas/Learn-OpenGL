@@ -8,6 +8,7 @@ configure_file(config.h.in config.h)
 
 add_executable(${PROJECT_NAME}  src/main.cpp)
 
+set_property(TARGET ${PROJECT_NAME} PROPERTY VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}")
 set(CMAKE_FIND_LIBRARY_SUFFIXES ".lib" ".a")
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_BINARY_DIR}/vcpkg_installed/x64-windows/include)
