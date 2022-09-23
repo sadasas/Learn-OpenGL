@@ -3,6 +3,31 @@
 #include <iostream>
 #include <config.h>
 
+//creata macros
+#define ASSERT(x) if(!(x)) __debugbreak();
+#define GLCall(x) GlCheckError();\
+x;\
+ASSERT(GlCheckCall(#x,__FILE__,__LINE__)) 
+
+
+static void GlCheckError()
+{
+    while (glGetError() != GL_NO_ERROR);
+
+}
+
+static bool GlCheckCall(const char* function, const char* file , int line)
+{
+    while (GLenum error = glGetError())
+    {
+        std::cout << error << " " << function << " " << file << " " << line << std::endl;
+        return false;
+       
+    }
+
+    return true;
+    
+}
 static unsigned int CompileShader(unsigned int type, const std::string& source)
 {
     unsigned int id = glCreateShader(type);
@@ -84,6 +109,7 @@ int main(int argc, char *argv[])
     glGenBuffers(1 ,&ibo);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER,ibo);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER,6 * sizeof(unsigned int),indices,GL_STATIC_DRAW);
+
     //create shader
     std::string vertexShader = 
     "#version 330 core\n"
@@ -117,8 +143,7 @@ int main(int argc, char *argv[])
         glClear(GL_COLOR_BUFFER_BIT);
 
         // shaders
-        glDrawElements(GL_TRIANGLES,6,GL_UNSIGNED_INT,nullptr);
-    
+        GLCall(glDrawElements(GL_TRIANGLES,6,GL_UNSIGNED_INT,nullptr));
 
         // Swap front and back buffers
         glfwSwapBuffers(window);
