@@ -75,6 +75,7 @@ int main(int argc, char *argv[])
 
     // Make the window's context current
     glfwMakeContextCurrent(window);
+    glfwSwapInterval(1);
 
     if (glewInit() != GLEW_OK)
     {
@@ -126,15 +127,23 @@ int main(int argc, char *argv[])
     "\n"
     "layout(location = 0) out vec4 color;"
     "\n"
+    "uniform vec4 u_Color;"
+    "\n"
     "void main()\n"
     "{\n"
-    "color = vec4(1.0,0.0,0.0,1.0);\n"
+    "color = u_Color;\n"
     "}\n";
 
     unsigned int shader = CreateShader(vertexShader,fragmentShader);
     glUseProgram(shader);
 
+    //search uniform registered and modified value
+     GLCall(int location =  glGetUniformLocation(shader,"u_Color"));
+     ASSERT(location!= -1);
+     GLCall(glUniform4f(location,1.0f,0.0f,0.0f,1.0f));
 
+    float r = 0.0f;
+    float increment = 0.05f;
     // Loop until the user closes the window
     while (!glfwWindowShouldClose(window))
     {
@@ -143,8 +152,13 @@ int main(int argc, char *argv[])
         glClear(GL_COLOR_BUFFER_BIT);
 
         // shaders
+        GLCall(glUniform4f(location,r,0.3f,0.8f,1.0f));
         GLCall(glDrawElements(GL_TRIANGLES,6,GL_UNSIGNED_INT,nullptr));
 
+        if(r > 1.0f) increment = -0.05f;
+        else if(r < 0.0f)increment = 0.05f;
+
+        r+= increment;
         // Swap front and back buffers
         glfwSwapBuffers(window);
 
